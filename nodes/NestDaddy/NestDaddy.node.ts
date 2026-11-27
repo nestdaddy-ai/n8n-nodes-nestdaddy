@@ -6,7 +6,7 @@ export class NestDaddy implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'NestDaddy',
 		name: 'nestDaddy',
-		icon: 'file:../../icons/nestdaddy.svg',
+		icon: { light: 'file:../../icons/nestdaddy.svg', dark: 'file:../../icons/nestdaddy.dark.svg' },
 		group: ['input'],
 		version: 1,
 		subtitle: '={{$parameter["operation"]}}',
@@ -90,7 +90,7 @@ export class NestDaddy implements INodeType {
 				name: 'limit',
 				type: 'number',
 				typeOptions: { minValue: 1, maxValue: 50 },
-				default: 10,
+				default: 50,
 				description: 'Max number of results to return',
 				displayOptions: showFor('webSearch'),
 				routing: { send: { type: 'query', property: 'limit' } },

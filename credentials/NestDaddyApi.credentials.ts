@@ -11,7 +11,7 @@ export class NestDaddyApi implements ICredentialType {
 
 	displayName = 'NestDaddy API';
 
-	icon: Icon = 'file:../icons/nestdaddy.svg';
+	icon: Icon = { light: 'file:../icons/nestdaddy.svg', dark: 'file:../icons/nestdaddy.dark.svg' };
 
 	documentationUrl = 'https://nestdaddy.com/integrations/n8n';
 
